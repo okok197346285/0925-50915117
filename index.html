@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡牌翻轉效果</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls">
+        <label for="cardSet">選擇牌組:</label>
+        <select id="cardSet">
+            <option value="set1">牌組 1</option>
+            <option value="set2">牌組 2</option>
+        </select>
+        <button id="startGame">開始遊戲</button>
+        <button id="showBack">顯示背面</button>
+        <button id="showFront">顯示正面</button>
+    </div>
+    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+        <div id="countdown" style="font-size: 24px;">0</div>
+        <div style="margin-left: 20px;">秒</div>
+    </div>
+    <div class="card-container" id="card-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
